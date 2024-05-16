@@ -1,10 +1,10 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Задача 1");
-        String firstName = "Ivan ";
-        String middleName = "Ivanov ";
-        String lastName = "Ivanovich ";
-        String fullName = firstName + middleName + lastName;
+        String firstName = "Семён"; // имя
+        String lastName = "Семёнович"; // отчество
+        String middleName = "Семёркин"; //фамилия
+        String fullName = middleName + " " + firstName + " " + lastName;
         System.out.println("Ф. И. О. сотрудника — " + fullName);
 
         System.out.println();
@@ -13,9 +13,8 @@ public class Main {
 
         System.out.println();
         System.out.println("Задача 3");
-        //У нас уже есть переменная fullName, но в задачи указано, чтобы мы переменную так же назвали
-        String fullNameFull = "Иванов Семён Семёнович";
-        fullNameFull = fullNameFull.replace("ё", "е");
-        System.out.println(fullNameFull);
+        fullName = fullName.replace("ё", "е");
+        System.out.println(fullName);
+
     }
 }
